@@ -1,0 +1,28 @@
+.songCard{
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.songCard-thumbnail{
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.songCard-title
+{
+  color: white;
+  font-weight: 900;
+}
+.songCard-description {
+  color: white;
+  font-weight: 500;
+  padding: 3px;
+  text-align: center;
+  margin-top: 10px;
+}

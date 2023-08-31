@@ -16,5 +16,33 @@
       <a >Create Play list</a>
     </div>
   </div>
-  <div class="spotify-home-container-playlist-container col-10"></div>
+  <div class="spotify-home-container-playlist-container col-10 ">
+    <app-top-nav></app-top-nav>
+    <div [style.paddingTop]="'48px'" class="mt-5 container-fluid">
+      <h4 [style.padding]="'10px'" [style.color]="'white'"> Focus</h4>
+      <div class="cardCollections">
+        <div id="songCard-item" *ngFor="let card of songsCards">
+          <app-songs-card
+          [title]="card.title"
+          [description]="card.description"
+          [playlistThumbnail]="card.playlistThumbnail"
+          ></app-songs-card>
+
+        </div>
+      </div>
+    </div>
+    <div [style.paddingTop]="'250px'" class="mt-5 container-fluid">
+      <h4 [style.padding]="'10px'" [style.color]="'white'"> spotify playlist</h4>
+      <div class="cardCollections">
+        <div id="songCard-item" *ngFor="let card of songsCards">
+          <app-songs-card
+          [title]="card.title"
+          [description]="card.description"
+          [playlistThumbnail]="card.playlistThumbnail"
+          ></app-songs-card>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

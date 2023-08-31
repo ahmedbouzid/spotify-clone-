@@ -11,7 +11,7 @@ import { PlaylistComponent } from './pages/playlist/playlist.component';
 import { SongsCardComponent } from './components/songs-card/songs-card.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ButtonComponent } from './components/button/button.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +26,9 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule ,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

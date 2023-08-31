@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="imageGreen">
+  <img src="assets/Spotify_Logo_CMYK_Green.png" height="200" >
+</div>
+<hr  [style.width]="'80%'"/>
+<div class="container">
+<form [formGroup]="loginForm" >
+  <div class="login">
+    <div>
+      <label for="">Email Or username</label>
+      <input formControlName="username" class="form-control" type="text" placeholder="Email Address or  user name">
+
+    </div>
+    <div>
+      <label for="">Password</label>
+      <input formControlName="password" class="form-control" type="text" placeholder="password">
+
+      <label class="mt-2" for=""><a href="">Forget your password ?</a></label>
+    </div>
+   <div class="d-flex justify-content-between align-items-center   btns">
+    <div class="mr-3">
+      <input type="checkbox" name="" id=""/><strong> Remember Me</strong>
+    </div>
+    <div> <button class="btn btn-success loginBtn" (click)="onLogin()">Login</button></div>
+   </div>
+   <hr [style.width]="'30%'" />
+   <h5>You don't have Account !!</h5>
+   <button class="signup_btn btn btn-success">SIGN UP FOR SPOTIFY</button>
+  </div>
+</form>
+</div>
